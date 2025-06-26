@@ -3,8 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div
-      className="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden"
-      style={{ fontFamily: 'Manrope, "Noto Sans", sans-serif' }}
+      className="relative flex size-full min-h-screen flex-col bg-gray-50 group/design-root overflow-x-hidden font-manrope"
     >
       <div className="layout-container flex h-full grow flex-col">
         <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e9edf1] px-10 py-3">
