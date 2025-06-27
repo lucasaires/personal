@@ -45,13 +45,13 @@ export default function Header({ currentPage }: HeaderProps) {
       <div className="flex flex-1 justify-end gap-8">
         <nav className="flex items-center gap-9">
           <Link className={getNavLinkClass("about")} href="/about">
-            About
+            Sobre mim
           </Link>
           <Link className={getNavLinkClass("projects")} href="/projects">
-            Projects
+            Projetos
           </Link>
           <Link className={getNavLinkClass("contact")} href="/contact">
-            Contact
+            Contato
           </Link>
         </nav>
         <div className="flex gap-2">
