@@ -56,7 +56,7 @@ export default function ExperienceSection() {
 
   return (
     <>
-      <h2 className="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      <h2 className="text-[#0d141c] text-[20px] sm:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
         Experiências
       </h2>
       <div className="grid grid-cols-[40px_1fr] gap-x-2 px-4">

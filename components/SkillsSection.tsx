@@ -28,10 +28,10 @@ export default function SkillsSection() {
 
   return (
     <>
-      <h2 className="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      <h2 className="text-[#0d141c] text-[20px] sm:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
         Skills
       </h2>
-      <div className="flex gap-3 p-3 flex-wrap pr-4">
+      <div className="flex gap-3 p-3 px-4 flex-wrap">
         {skills.map((skill, index) => (
           <SkillTag key={index} skill={skill} />
         ))}

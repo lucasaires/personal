@@ -61,8 +61,8 @@ export default function Projects() {
   return (
     <PageLayout currentPage="projects">
       <div className="flex flex-wrap justify-between gap-3 p-4">
-        <div className="flex min-w-72 flex-col gap-3">
-          <p className="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight">
+        <div className="flex min-w-72 flex-col gap-3 w-full">
+          <p className="text-[#0d141c] tracking-light text-[28px] sm:text-[32px] font-bold leading-tight">
             Portfólio de Projetos
           </p>
           <p className="text-[#49719c] text-sm font-normal leading-normal">
@@ -71,7 +71,7 @@ export default function Projects() {
         </div>
       </div>
       
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-6 p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

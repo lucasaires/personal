@@ -4,8 +4,8 @@ export default function About() {
   return (
     <PageLayout currentPage="about">
       <div className="flex flex-wrap justify-between gap-3 p-4">
-        <div className="flex min-w-72 flex-col gap-3">
-          <p className="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight">
+        <div className="flex min-w-72 flex-col gap-3 w-full">
+          <p className="text-[#0d141c] tracking-light text-[28px] sm:text-[32px] font-bold leading-tight">
             Quem sou eu?
           </p>
           <p className="text-[#49719c] text-sm font-normal leading-normal">
@@ -21,7 +21,7 @@ export default function About() {
         </div>
       </div>
 
-      <h2 className="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      <h2 className="text-[#0d141c] text-[20px] sm:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
         Um pouco sobre mim
       </h2>
       <p className="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">
@@ -36,7 +36,7 @@ export default function About() {
       <SkillsSection />
       <ExperienceSection />
 
-      <h2 className="text-[#0d141c] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
+      <h2 className="text-[#0d141c] text-[20px] sm:text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">
         Interesses
       </h2>
       <p className="text-[#0d141c] text-base font-normal leading-normal pb-3 pt-1 px-4">

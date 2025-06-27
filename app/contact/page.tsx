@@ -6,8 +6,8 @@ export default function Contact() {
   return (
     <PageLayout currentPage="contact">
       <div className="flex flex-wrap justify-between gap-3 p-4">
-        <div className="flex min-w-72 flex-col gap-3">
-          <p className="text-[#0d141c] tracking-light text-[32px] font-bold leading-tight">
+        <div className="flex min-w-72 flex-col gap-3 w-full">
+          <p className="text-[#0d141c] tracking-light text-[28px] sm:text-[32px] font-bold leading-tight">
             Entre em Contato
           </p>
           <p className="text-[#49719c] text-sm font-normal leading-normal">
@@ -18,8 +18,14 @@ export default function Contact() {
         </div>
       </div>
 
-      <ContactForm />
-      <ContactInfo />
+      <div className="flex flex-col lg:flex-row gap-8 p-4">
+        <div className="flex-1">
+          <ContactForm />
+        </div>
+        <div className="lg:max-w-md">
+          <ContactInfo />
+        </div>
+      </div>
     </PageLayout>
   );
 }

@@ -28,42 +28,40 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-        <label className="flex flex-col min-w-40 flex-1">
-          <p className="text-[#0d141c] text-base font-medium leading-normal pb-2">
-            Seu Nome
-          </p>
-          <input
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            placeholder="Digite seu nome"
-            className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d141c] focus:outline-0 focus:ring-0 border border-[#cedbe8] bg-slate-50 focus:border-[#cedbe8] h-14 placeholder:text-[#49719c] p-[15px] text-base font-normal leading-normal"
-            required
-          />
-        </label>
-      </div>
+    <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto">
+      <div className="flex flex-col gap-6 p-4">
+        <div className="flex flex-col sm:flex-row gap-4">
+          <label className="flex flex-col flex-1">
+            <p className="text-[#0d141c] text-base font-medium leading-normal pb-2">
+              Seu Nome
+            </p>
+            <input
+              name="name"
+              value={formData.name}
+              onChange={handleInputChange}
+              placeholder="Digite seu nome"
+              className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d141c] focus:outline-0 focus:ring-0 border border-[#cedbe8] bg-slate-50 focus:border-[#cedbe8] h-14 placeholder:text-[#49719c] p-[15px] text-base font-normal leading-normal"
+              required
+            />
+          </label>
 
-      <div className="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-        <label className="flex flex-col min-w-40 flex-1">
-          <p className="text-[#0d141c] text-base font-medium leading-normal pb-2">
-            Seu Email
-          </p>
-          <input
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            placeholder="Digite seu email"
-            className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d141c] focus:outline-0 focus:ring-0 border border-[#cedbe8] bg-slate-50 focus:border-[#cedbe8] h-14 placeholder:text-[#49719c] p-[15px] text-base font-normal leading-normal"
-            required
-          />
-        </label>
-      </div>
+          <label className="flex flex-col flex-1">
+            <p className="text-[#0d141c] text-base font-medium leading-normal pb-2">
+              Seu Email
+            </p>
+            <input
+              name="email"
+              type="email"
+              value={formData.email}
+              onChange={handleInputChange}
+              placeholder="Digite seu email"
+              className="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#0d141c] focus:outline-0 focus:ring-0 border border-[#cedbe8] bg-slate-50 focus:border-[#cedbe8] h-14 placeholder:text-[#49719c] p-[15px] text-base font-normal leading-normal"
+              required
+            />
+          </label>
+        </div>
 
-      <div className="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
-        <label className="flex flex-col min-w-40 flex-1">
+        <label className="flex flex-col">
           <p className="text-[#0d141c] text-base font-medium leading-normal pb-2">
             Sua Mensagem
           </p>
@@ -76,15 +74,15 @@ export default function ContactForm() {
             required
           ></textarea>
         </label>
-      </div>
 
-      <div className="flex px-4 py-3 justify-start">
-        <button
-          type="submit"
-          className="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#3490f3] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#2980d9] transition-colors"
-        >
-          <span className="truncate">Enviar Mensagem</span>
-        </button>
+        <div className="flex justify-start">
+          <button
+            type="submit"
+            className="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#3490f3] text-slate-50 text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#2980d9] transition-colors"
+          >
+            <span className="truncate">Enviar Mensagem</span>
+          </button>
+        </div>
       </div>
     </form>
   );
