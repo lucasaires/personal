@@ -28,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${manrope.variable} ${notoSans.variable} antialiased`}
+        suppressHydrationWarning={true}
       >
         {children}
       </body>
