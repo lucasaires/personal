@@ -28,7 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${manrope.variable} ${notoSans.variable} antialiased`}
-        style={{ fontFamily: 'Manrope, "Noto Sans", sans-serif' }}
       >
         {children}
       </body>
